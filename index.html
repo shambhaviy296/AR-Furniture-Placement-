@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f172a">
+<title>AR Furniture Placement</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+</script>
+</head>
+<body>
+<div id="overlay">
+  <div id="stage"></div>
+
+  <header id="top">
+    <div>
+      <div class="eyebrow">AR Furniture Placement</div>
+      <div id="itemName">Sofa</div>
+      <div id="dims"></div>
+    </div>
+    <button id="exitBtn" hidden>Exit AR</button>
+  </header>
+
+  <div id="hint"></div>
+  <button id="startBtn" disabled>Checking AR support…</button>
+
+  <section id="panel">
+    <div id="catalog"></div>
+    <div class="row">
+      <div id="swatches"></div>
+      <div id="actions">
+        <button id="rotL" title="Rotate left">⟲</button>
+        <button id="rotR" title="Rotate right">⟳</button>
+        <button id="del" title="Delete selected">🗑</button>
+        <button id="clear" title="Clear all">Clear</button>
+      </div>
+    </div>
+  </section>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
